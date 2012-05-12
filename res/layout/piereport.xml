@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/pietext"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="@string/pietext" />
+     <Spinner 
+        android:id="@+id/spinner"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:prompt="@string/pieReportPeriod"/>
+
+    <LinearLayout
+        android:id="@+id/steplayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/piesteptext"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:text="@string/piesteptext" />
+
+        <TextView
+            android:id="@+id/piestep"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+        
+        <CheckBox android:id="@+id/checkbox"
+        	android:layout_width="wrap_content"
+       	 	android:layout_height="40dp"
+       		android:text="hide systemOff"
+        	android:onClick="onCheckboxClicked"
+        	android:gravity="left"/>
+
+        <Button
+		    android:layout_height="40dp"
+		    android:layout_width="wrap_content"
+		    android:text="Details >"
+		    android:onClick="goToDetails" 
+		    android:layout_gravity="center_horizontal" 
+	   />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/chart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:orientation="horizontal" />
+
+</LinearLayout>

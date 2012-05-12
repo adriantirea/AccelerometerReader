@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/image" >
+
+    
+    <TextView
+        android:id="@+id/z"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/syncdescription" />
+    
+	<LinearLayout
+	    xmlns:android="http://schemas.android.com/apk/res/android"
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal" >
+
+	    <Button
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="0dp"
+	        android:onClick="exportReports"
+	        android:text="Export history" />
+
+	    <Button
+	        android:layout_width="150dp"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:layout_marginTop="10dp"
+	        android:onClick="importReports"
+	        android:text="Import history" />
+	</LinearLayout>
+
+	<Button
+	    android:layout_width="200dp"
+	    android:layout_height="wrap_content"
+	    android:layout_gravity="center_horizontal"
+	    android:layout_marginTop="0dp"
+	    android:onClick="createAccount"
+	    android:text="Create account" />
+    
+	<TextView
+        android:id="@+id/x"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/deletedescription" />
+  
+  	<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:orientation="horizontal" >
+		<Button
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="150dp"
+	    	android:text="Delete '.txt', '.arff'"
+	    	android:onClick="deleteSampleFile" 
+	    	android:layout_gravity="center_horizontal" 
+	    	android:layout_marginTop="5dp"
+	   	/>
+	  	<Button
+	    	android:layout_height="wrap_content"
+	    	android:layout_width="150dp"
+	    	android:text="Delete sqlDatabase'"
+	    	android:onClick="deleteDatabase" 
+	    	android:layout_gravity="center_horizontal" 
+	    	android:layout_marginTop="0dp"
+	   	/>
+	</LinearLayout>
+	
+
+</LinearLayout>

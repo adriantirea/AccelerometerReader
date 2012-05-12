@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Activities monitor - for a more active life!</string>
+    <string name="app_name">AccelerometerReader</string>
+    
+    <string name="contacts_description">Insert emergency contacts</string>
+    <string name="namecontact">Contact name</string>
+    <string name="phonenumber">Phone number</string>
+    <string name="emailcontact">Email</string>
+    
+    <string name="alertdescription">Stop if you are OK! else will send SMS to contacts.</string>
+        
+	<string name="timelinereport">This is a time line report for last 60 minutes</string>
+	<string name="pietext"></string>
+	<string name="piesteptext">Steps:</string>
+	<string name="pieReportPeriod">Pie Report period</string>
+    <string-array name="pieReport_array">
+        <item>Today</item>
+        <item>Yesterday</item>
+        <item>Last week</item>
+        <item>Last month</item>
+        <item>Previous month</item>
+        <item>Last Year</item>
+    </string-array>
+    
+    <string name="persinfoshortdescription">Set personal informations and preferences such as mass, height, alert time.</string>
+    <string name="persinfodescription">Set body mass, height. Set time interval of continuous no action that triggers an emergency message to contacts set (i.e. 12 hours)).</string>
+    <string name="syncshortdescription">Sync feature to manage history.</string>
+    <string name="syncdescription">Sync feature gives you the possibility to export your history to a backup server and to import it locally whenever you need. Sync helps you to keep your history when you change your telephone. Create an account if necessary and use it to import and export history.</string>
+	
+	<string name="contactdescription">Insert contact information of person to be contacted in case of dangerous situations.</string>
+	<string name="deletedescription">Delete local history. Maybe it is not yours...</string>
+</resources>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.model.accelerometer"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk android:minSdkVersion="7" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:label="@string/app_name"
+            android:name="com.activities.gui.AccelerometerReaderActivity"
+            android:screenOrientation="portrait"  >
+            <intent-filter >
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="com.activities.gui.ContactsActivity"
+			android:label="@string/app_name">
+		</activity>
+		
+        <activity android:name="com.activities.gui.SettingsActivity"
+			android:label="@string/app_name">
+		</activity>
+        
+        <activity android:name="com.activities.gui.SyncActivity"
+			android:label="@string/app_name">
+		</activity>
+		
+		<activity android:name="com.activities.gui.PersonalInfoActivity"
+			android:label="@string/app_name">
+		</activity>
+        <activity android:name="com.activities.gui.ActivityLog"
+			android:label="@string/app_name"
+			android:screenOrientation="portrait" >
+		</activity>
+		
+		<activity android:name="com.activities.gui.charts.PieReportActivity"
+			android:label="@string/app_name">
+		</activity>
+		
+		<activity android:name="com.activities.gui.charts.DetailedStatisticActivity"
+			android:label="@string/app_name">
+		</activity>
+		
+		<activity android:name="com.activities.gui.ReportDetailsActivity"
+			android:label="@string/app_name">
+		</activity>
+		    
+		<activity android:name="com.activities.gui.AlertActivity"
+			android:label="@string/app_name">
+		</activity>
+	    
+	    <activity android:name="org.achartengine.GraphicalActivity" />
+        
+        <service android:name="com.services.ServiceLogAccelerometer"/>
+        <service android:name="com.services.ServiceDatabaseCompressor"/>
+        
+    </application>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+	<uses-permission android:name="android.permission.CALL_PHONE" />
+	<uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+</manifest>

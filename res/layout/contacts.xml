@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/image" >
+
+    
+    <TextView
+        android:id="@+id/x"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:text="@string/contacts_description" />
+     <LinearLayout
+        android:id="@+id/contactinfolayout1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/namecontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textStyle="bold"
+            android:text="@string/namecontact" />
+        <EditText
+            android:id="@+id/edittext1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+       
+    </LinearLayout>
+     <LinearLayout
+        android:id="@+id/contactinfolayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/phonenumber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textStyle="bold"
+            android:text="@string/phonenumber" />
+        <EditText
+            android:id="@+id/edittext2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+       
+    </LinearLayout>
+         <LinearLayout
+        android:id="@+id/contactinfolayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:layout_weight="0"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/emailcontact"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0"
+            android:textStyle="bold"
+            android:text="@string/emailcontact" />
+        <EditText
+            android:id="@+id/edittext3"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+       
+    </LinearLayout>    
+    <Button
+	    android:layout_height="wrap_content"
+	    android:layout_width="200dp"
+	    android:text="Add Contact"
+	    android:onClick="addEmergencyContact" 
+	    android:layout_gravity="center_horizontal" 
+	    android:layout_marginTop="0dp"
+	   />
+    <ListView
+        android:id="@+id/contactlist"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="0" />
+	  
+</LinearLayout>

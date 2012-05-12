@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:background="@drawable/image" >
+
+   
+    <TextView
+        android:id="@+id/z"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/hello" />
+ 
+    <Button
+	    android:layout_height="wrap_content"
+	    android:layout_width="200dp"
+	    android:text="Start Recording"
+	    android:onClick="startRecordAccelerometer" 
+	    android:layout_gravity="center_horizontal" 
+	    android:layout_marginTop="0dp"
+	   />
+    <Button
+	    android:layout_height="wrap_content"
+	    android:layout_width="200dp"
+	    android:text="Stop Recording"
+	    android:onClick="stopRecordAccelerometer" 
+	    android:layout_gravity="center_horizontal" 
+	    android:layout_marginTop="5dp"
+	   />
+
+     <Button
+	    android:layout_height="wrap_content"
+	    android:layout_width="200dp"
+	    android:text="Settings"
+	    android:onClick="goToSettings" 
+	    android:layout_gravity="center_horizontal" 
+	    android:layout_marginTop="20dp"
+	   />
+
+	  <Button
+	    android:layout_height="wrap_content"
+	    android:layout_width="200dp"
+	    android:text="View past activities"
+	    android:onClick="viewPastActivities" 
+	    android:layout_gravity="center_horizontal" 
+	    android:layout_marginTop="5dp"
+	   />
+	  <Button
+	    android:layout_height="wrap_content"
+	    android:layout_width="200dp"
+	    android:text="Chart past activities"
+	    android:onClick="chartPastActivities" 
+	    android:layout_gravity="center_horizontal" 
+	    android:layout_marginTop="0dp"
+	   />
+	    <Button
+	    android:layout_height="wrap_content"
+	    android:layout_width="200dp"
+	    android:text="Chart past activities"
+	    android:onClick="chartPieActivities" 
+	    android:layout_gravity="center_horizontal" 
+	    android:layout_marginTop="0dp"
+	   />
+	    
+	   <Button
+	    android:layout_height="70dp"
+	    android:layout_width="250dp"
+	    android:layout_marginTop="10dp"
+	    android:textSize="25dp"
+	    android:text="Call Help"
+	    android:onClick="callHelp" 
+	    android:layout_gravity="center_horizontal" 
+	   />
+	  
+</LinearLayout>
