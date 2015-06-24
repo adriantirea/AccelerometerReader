@@ -11,7 +11,7 @@
 # If you would like to submit a bug report, please visit:
 #   http://bugreport.sun.com/bugreport/crash.jsp
 #
-
+ 
 ---------------  T H R E A D  ---------------
 
 Current thread (0x017e9400):  JavaThread "Unknown thread" [_thread_in_vm, id=2384, stack(0x01850000,0x018a0000)]
